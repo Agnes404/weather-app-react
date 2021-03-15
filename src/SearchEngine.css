@@ -1,0 +1,15 @@
+.SearchEngine .search {
+  width: 50%;
+  display: inline;
+  text-align: center;
+}
+
+.SearchEngine .button {
+  box-shadow: 1px 1px 10px rgb(162, 206, 235);
+  margin: 5px;
+}
+
+.SearchEngine .location {
+  text-align: center;
+  margin: 5px;
+}
