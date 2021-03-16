@@ -1,0 +1,27 @@
+.CurrentWeather .city {
+  color: #42a5f5;
+  font-size: 52px;
+  font-family: "Parisienne";
+  font-weight: 900;
+  padding: 10px 0px;
+}
+
+.CurrentWeather h3 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 42px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.CurrentWeather ul {
+  list-style: none;
+  font-family: "Tinos", serif;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.CurrentWeather .tempSymbol,
+.units {
+  text-decoration: none;
+  font-size: 21px;
+}
