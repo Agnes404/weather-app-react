@@ -32,15 +32,15 @@ export default function CurrentWeather() {
             {temp}
             <sup>
               <span className="units">
+                <a href="/" className="tempSymbol" onClick={convertToCelsius}>
+                  °C
+                </a>
+                |
                 <a
                   href="/"
                   className="tempSymbol"
                   onClick={convertToFahrenheit}
                 >
-                  °C
-                </a>
-                |
-                <a href="/" className="tempSymbol" onClick={convertToCelsius}>
                   °F
                 </a>
               </span>
