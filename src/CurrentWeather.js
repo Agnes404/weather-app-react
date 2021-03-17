@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./CurrentWeather.css";
 
@@ -11,20 +11,36 @@ export default function CurrentWeather() {
     windSpeed: 3,
   };
 
+  const [temp, setTemp] = useState(weatherData.temperature);
+
+  function convertToFahrenheit(event) {
+    event.preventDefault();
+    let Fahrenheit = Math.round((weatherData.temperature * 9) / 5 + 32);
+    setTemp(Fahrenheit);
+  }
+  function convertToCelsius(event) {
+    event.preventDefault();
+    setTemp(weatherData.temperature);
+  }
+
   return (
     <div className="CurrentWeather">
       <h1 className="city"> New York</h1>
       <div className="row">
         <div className="col">
-          <h3 className="temp">
-            {weatherData.temperature}
+          <h3 className="temperature">
+            {temp}
             <sup>
               <span className="units">
-                <a href="/" className="tempSymbol">
+                <a
+                  href="/"
+                  className="tempSymbol"
+                  onClick={convertToFahrenheit}
+                >
                   °C
                 </a>
                 |
-                <a href="/" className="tempSymbol">
+                <a href="/" className="tempSymbol" onClick={convertToCelsius}>
                   °F
                 </a>
               </span>
