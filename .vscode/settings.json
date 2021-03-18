@@ -1,6 +1,7 @@
 {
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    }
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.tabSize": 2
 }

@@ -1,6 +1,7 @@
 import SearchEngine from "./SearchEngine";
 import Date from "./Date";
 import CurrentWeather from "./CurrentWeather";
+import Forecast from "./Forecast";
 
 import "./App.css";
 
@@ -14,7 +15,13 @@ function App() {
           <CurrentWeather />
 
           <div className="forecastList">
-            <ul className="list-group" id="forecast-element"></ul>
+            <ul class="list-group list-group-flush">
+              <Forecast />
+              <Forecast />
+              <Forecast />
+              <Forecast />
+              <Forecast />
+            </ul>
           </div>
         </div>
       </div>
