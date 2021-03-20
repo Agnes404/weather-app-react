@@ -52,7 +52,7 @@ export default function CurrentWeather() {
           <ul>
             <li>Feels like: {weatherData.feelsLike}°C</li>
             <li>Humidity: {weatherData.humidity}%</li>
-            <li>Wind speed: {weatherData.windSpeed}km/h</li>
+            <li>Wind: {weatherData.windSpeed}km/h</li>
           </ul>
         </div>
       </div>

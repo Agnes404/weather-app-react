@@ -2,20 +2,21 @@ import SearchEngine from "./SearchEngine";
 import Date from "./Date";
 import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";
+import Footer from "./Footer";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div class="border">
-        <div class="container">
+      <div className="border">
+        <div className="container">
           <SearchEngine />
           <Date />
           <CurrentWeather />
 
           <div className="forecastList">
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
               <Forecast />
               <Forecast />
               <Forecast />
@@ -23,6 +24,7 @@ function App() {
               <Forecast />
             </ul>
           </div>
+          <Footer />
         </div>
       </div>
     </div>

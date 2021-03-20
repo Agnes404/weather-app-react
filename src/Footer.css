@@ -1,0 +1,18 @@
+.gitHubLink,
+.linkedInLink {
+  text-decoration: none;
+  font-weight: 450;
+}
+
+footer {
+  margin-top: calc(5%);
+  width: 100%;
+  text-align: center;
+}
+
+footer:hover .pageAuthor {
+  display: none;
+}
+footer:hover:after {
+  content: "Agnieszka Krzysztofik 👩🏼‍💻";
+}
