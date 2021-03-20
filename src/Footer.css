@@ -10,9 +10,9 @@ footer {
   text-align: center;
 }
 
-footer:hover .pageAuthor {
+/* footer:hover .pageAuthor {
   display: none;
 }
 footer:hover:after {
   content: "Agnieszka Krzysztofik 👩🏼‍💻";
-}
+} */
