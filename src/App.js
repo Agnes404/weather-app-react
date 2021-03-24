@@ -13,7 +13,7 @@ function App() {
         <div className="container">
           <SearchEngine />
           <Date />
-          <CurrentWeather />
+          <CurrentWeather defaultCity="New York" />
 
           <div className="forecastList">
             <ul className="list-group list-group-flush">
