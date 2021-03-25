@@ -1,5 +1,4 @@
 import SearchEngine from "./SearchEngine";
-import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
@@ -10,10 +9,7 @@ function App() {
     <div className="App">
       <div className="border">
         <div className="container">
-          <SearchEngine />
-
-          <CurrentWeather defaultCity="New York" />
-
+          <SearchEngine defaultCity="New York" />
           <div className="forecastList">
             <ul className="list-group list-group-flush">
               <Forecast />
