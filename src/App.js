@@ -1,5 +1,4 @@
 import SearchEngine from "./SearchEngine";
-import Date from "./Date";
 import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
@@ -12,7 +11,7 @@ function App() {
       <div className="border">
         <div className="container">
           <SearchEngine />
-          <Date />
+
           <CurrentWeather defaultCity="New York" />
 
           <div className="forecastList">

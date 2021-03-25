@@ -1,22 +1,22 @@
-.Date h1,
+.FormattedDate h1,
 h2 {
   line-height: 48px;
   font-weight: 900;
   text-align: center;
 }
 
-.Date h2 {
+.FormattedDate h2 {
   color: #0b0f13;
   font-size: 26px;
   font-family: "Bodoni Moda", serif;
 }
-.Date .time {
+.FormattedDate .time {
   font-size: 30px;
   font-weight: 900;
   font-family: "Fredericka the Great", cursive;
 }
 
-.Date h1 {
+.FormattedDate h1 {
   color: #42a5f5;
   font-size: 52px;
   font-family: "Parisienne";
