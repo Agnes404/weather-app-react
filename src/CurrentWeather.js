@@ -1,44 +1,16 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemp from "./WeatherTemp";
 
 import "./CurrentWeather.css";
 
 export default function CurrentWeather(props) {
-  // const [temp, setTemp] = useState(weatherInfo.temp);
-
-  function convertToFahrenheit(event) {
-    event.preventDefault();
-    // let Fahrenheit = Math.round((weatherData.temp * 9) / 5 + 32);
-    // setTemp(Fahrenheit);
-  }
-  function convertToCelsius(event) {
-    event.preventDefault();
-    // setTemp(weatherData.temp);
-  }
-
   return (
     <div className="CurrentWeather">
       <h1 className="city"> {props.weatherInfo.city} </h1>
       <div className="row d-flex align-items-center">
         <div className="col-4">
-          <h3 className="temperature">
-            {props.weatherInfo.temp}
-            <sup>
-              <span className="units">
-                <a href="/" className="tempSymbol" onClick={convertToCelsius}>
-                  °C
-                </a>
-                |
-                <a
-                  href="/"
-                  className="tempSymbol"
-                  onClick={convertToFahrenheit}
-                >
-                  °F
-                </a>
-              </span>
-            </sup>
-          </h3>
+          <WeatherTemp celsius={props.weatherInfo.temp} />
           <p className="description text-capitalize">
             {props.weatherInfo.description}
           </p>

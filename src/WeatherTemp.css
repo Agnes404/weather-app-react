@@ -1,0 +1,13 @@
+.WeatherTemp h3 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.WeatherTemp .tempSymbol,
+.units {
+  text-decoration: none;
+  font-size: 19px;
+  padding: 1px;
+}
