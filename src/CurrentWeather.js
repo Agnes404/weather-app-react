@@ -43,6 +43,12 @@ export default function CurrentWeather(props) {
           </p>
         </div>
         <div className="col">
+          <img
+            src={props.weatherInfo.iconUrl}
+            alt={props.weatherInfo.description}
+          />
+        </div>
+        <div className="col">
           <ul>
             <li>Feels like: {props.weatherInfo.feelsLike}°C</li>
             <li>Humidity: {props.weatherInfo.humidity}%</li>
