@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./WeatherIcon.css";
+
 export default function WeatherIcon(props) {
   const codeMapping = {
     "01d": "clear-day",

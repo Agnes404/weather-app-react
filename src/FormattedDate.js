@@ -54,10 +54,10 @@ export default function FormattedDate(props) {
   return (
     <div className="FormattedDate">
       <div className="row">
-        <div className="col">
+        <div className="col-6">
           <h2 className="date">{currentDate()}</h2>
         </div>
-        <div className="col">
+        <div className="col-6">
           <h2>
             <i className="far fa-clock"></i>
             <span className="time">{currentTime()}</span>

@@ -20,7 +20,7 @@ export default function CurrentWeather(props) {
     <div className="CurrentWeather">
       <h1 className="city"> {props.weatherInfo.city} </h1>
       <div className="row d-flex align-items-center">
-        <div className="col">
+        <div className="col-4">
           <h3 className="temperature">
             {props.weatherInfo.temp}
             <sup>
@@ -43,13 +43,13 @@ export default function CurrentWeather(props) {
             {props.weatherInfo.description}
           </p>
         </div>
-        <div className="col">
+        <div className="col-4">
           <WeatherIcon
             code={props.weatherInfo.icon}
             alt={props.weatherInfo.description}
           />
         </div>
-        <div className="col">
+        <div className="col-4">
           <ul>
             <li>Feels like: {props.weatherInfo.feelsLike}°C</li>
             <li>Humidity: {props.weatherInfo.humidity}%</li>

@@ -1,14 +1,15 @@
 .CurrentWeather .city {
   color: #42a5f5;
-  font-size: 52px;
+  font-size: 50px;
   font-family: "Parisienne";
   font-weight: 900;
-  padding: 10px 0px;
+  padding: 8px 0px;
+  margin-bottom: 0px;
 }
 
 .CurrentWeather h3 {
   font-family: "Bodoni Moda", serif;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 900;
   text-align: center;
 }
@@ -17,12 +18,16 @@
 p {
   list-style: none;
   font-family: "Tinos", serif;
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px;
 }
 
 .CurrentWeather .tempSymbol,
 .units {
   text-decoration: none;
-  font-size: 21px;
+  font-size: 19px;
+}
+
+.CurrentWeather .col-4 {
+  padding: 5px;
 }

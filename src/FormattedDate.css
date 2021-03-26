@@ -7,18 +7,18 @@ h2 {
 
 .FormattedDate h2 {
   color: #0b0f13;
-  font-size: 26px;
+  font-size: 24px;
   font-family: "Bodoni Moda", serif;
 }
 .FormattedDate .time {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 900;
   font-family: "Fredericka the Great", cursive;
 }
 
 .FormattedDate h1 {
   color: #42a5f5;
-  font-size: 52px;
+  font-size: 50px;
   font-family: "Parisienne";
-  padding-top: 10px;
+  padding-top: 8px;
 }
