@@ -27,7 +27,6 @@ export default function WeatherIcon(props) {
   let iconUrl = `https://bmcdn.nl/assets/weather-icons/v1.4.1/${
     codeMapping[props.code]
   }.svg`;
-  console.log(props.code);
 
   return (
     <div className="WeatherIcon">

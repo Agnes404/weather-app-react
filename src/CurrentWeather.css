@@ -7,7 +7,7 @@
   margin-bottom: 0px;
 }
 
-.CurrentWeather ul,
+.CurrentWeather .currentWeatherInfo,
 p {
   list-style: none;
   font-family: "Tinos", serif;

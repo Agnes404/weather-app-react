@@ -25,11 +25,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App ul {
-  list-style: none;
-  font-family: "Tinos", serif;
-  font-size: 18px;
-  padding: 5px;
-  text-align: center;
-}

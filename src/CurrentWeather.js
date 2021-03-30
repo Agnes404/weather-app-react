@@ -22,7 +22,7 @@ export default function CurrentWeather(props) {
           />
         </div>
         <div className="col-4">
-          <ul>
+          <ul className="currentWeatherInfo">
             <li>Feels like: {props.weatherInfo.feelsLike}°C</li>
             <li>Humidity: {props.weatherInfo.humidity}%</li>
             <li>Wind: {props.weatherInfo.windSpeed} km/h</li>

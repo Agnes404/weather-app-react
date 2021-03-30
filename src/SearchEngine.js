@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
+import Forecast from "./Forecast";
 import axios from "axios";
 
 import "./SearchEngine.css";
@@ -60,6 +61,11 @@ export default function SearchEngine(props) {
         </div>
         <FormattedDate date={weatherData.date} />
         <CurrentWeather weatherInfo={weatherData} />
+        <div className="forecastList">
+          <ul className="list-group list-group-flush forecastRow">
+            <Forecast city={weatherData.city} />
+          </ul>
+        </div>
       </div>
     );
   } else {
