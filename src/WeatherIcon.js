@@ -30,7 +30,7 @@ export default function WeatherIcon(props) {
 
   return (
     <div className="WeatherIcon">
-      <img src={iconUrl} alt={props.alt} />
+      <img className="mainIcon" src={iconUrl} alt={props.alt} />
     </div>
   );
 }

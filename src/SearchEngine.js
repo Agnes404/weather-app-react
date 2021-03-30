@@ -61,11 +61,7 @@ export default function SearchEngine(props) {
         </div>
         <FormattedDate date={weatherData.date} />
         <CurrentWeather weatherInfo={weatherData} />
-        <div className="forecastList">
-          <ul className="list-group list-group-flush forecastRow">
-            <Forecast city={weatherData.city} />
-          </ul>
-        </div>
+        <Forecast city={weatherData.city} />
       </div>
     );
   } else {

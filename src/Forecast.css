@@ -1,0 +1,12 @@
+.Forecast .forecastList {
+  list-style: none;
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Forecast img {
+  max-width: 100px;
+}
