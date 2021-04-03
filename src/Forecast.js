@@ -24,21 +24,6 @@ export default function Forecast(props) {
             <ForecastElement prediction={forecast.list[3]} />
             <ForecastElement prediction={forecast.list[4]} />
           </div>
-          {/* <ul className="list-group list-group-flush forecastRow">
-          <li className="list-group-item">
-            <div className="d-flex bd-highlight">
-              <div className="p-2 flex-fill bd-highlight">
-                {new Date(forecast.list[0].dt * 1000).getHours()}:00
-              </div>
-              <div className="p-2 flex-fill bd-highlight">
-                <WeatherIcon code={forecast.list[0].weather[0].icon} />
-              </div>
-              <div className="p-2 flex-fill bd-highlight">
-                {Math.round(forecast.list[0].main.temp)}°C
-              </div>
-            </div>
-          </li>
-        </ul> */}
         </div>
       </div>
     );

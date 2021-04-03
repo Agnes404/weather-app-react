@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
 import Forecast from "./Forecast";
+import ForecastDaily from "./ForecastDaily";
 import axios from "axios";
 
 import "./SearchEngine.css";
@@ -13,6 +14,7 @@ export default function SearchEngine(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       temp: Math.round(response.data.main.temp),
@@ -62,6 +64,8 @@ export default function SearchEngine(props) {
         <FormattedDate date={weatherData.date} />
         <CurrentWeather weatherInfo={weatherData} />
         <Forecast city={weatherData.city} />
+        <hr />
+        <ForecastDaily coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
