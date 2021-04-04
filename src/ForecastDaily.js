@@ -18,11 +18,11 @@ export default function ForecastDaily(props) {
       <div className="ForecastDaily">
         <div className="forecastList">
           <div className="row">
-            <ForecastDailyElement daily={forecast[0]} />
             <ForecastDailyElement daily={forecast[1]} />
             <ForecastDailyElement daily={forecast[2]} />
             <ForecastDailyElement daily={forecast[3]} />
             <ForecastDailyElement daily={forecast[4]} />
+            <ForecastDailyElement daily={forecast[5]} />
           </div>
         </div>
       </div>

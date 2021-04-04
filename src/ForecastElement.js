@@ -12,7 +12,6 @@ export default function ForecastElement(props) {
     let temperature = Math.round(props.prediction.main.temp);
     return `${temperature}°C`;
   }
-  console.log(props.prediction);
 
   return (
     <div className="col">

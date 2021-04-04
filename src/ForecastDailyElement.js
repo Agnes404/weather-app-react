@@ -9,7 +9,7 @@ export default function ForecastDailyElement(props) {
 
   function forecastDay() {
     let date = new Date(props.daily.dt * 1000);
-    let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let day = days[date.getDay()];
     return `${day}`;
   }
