@@ -13,6 +13,12 @@ export default function Forecast(props) {
     setLoaded(true);
   }
 
+  function load() {
+    let apiKey = "dec577791fe2b9b980cbcd63ffd42e77";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleForecastData);
+  }
+
   if (loaded && props.city === forecast.city.name) {
     return (
       <div className="Forecast ">
@@ -28,10 +34,7 @@ export default function Forecast(props) {
       </div>
     );
   } else {
-    let apiKey = "dec577791fe2b9b980cbcd63ffd42e77";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleForecastData);
-
+    load();
     return "loading...";
   }
 }

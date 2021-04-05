@@ -10,6 +10,7 @@ import CurrentWeather from "./CurrentWeather";
 export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [searchInput, setSearchInput] = useState("");
 
   function handleResponse(response) {
     setWeatherData({
@@ -29,16 +30,24 @@ export default function SearchEngine(props) {
   function handleSubmit(event) {
     event.preventDefault();
     search();
+    setSearchInput("");
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
+    setSearchInput(event.target.value);
   }
 
   function search() {
     const apiKey = `dec577791fe2b9b980cbcd63ffd42e77`;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleResponse).catch(handleError);
+  }
+
+  function handleError(error) {
+    if (error.response) {
+      alert("Sorry, we couldn't find your city. Please type another one.");
+    }
   }
 
   function handleLocation(position) {
@@ -65,6 +74,7 @@ export default function SearchEngine(props) {
               className="search form-control"
               autoFocus="on"
               onChange={handleCityChange}
+              value={searchInput}
             />
             <button type="submit" className="button btn btn-light mb-2">
               <i className="searchIcon fas fa-search"></i>
@@ -87,6 +97,6 @@ export default function SearchEngine(props) {
     );
   } else {
     search();
-    return <h1> Loading... </h1>;
+    return <h1> `Loading...` </h1>;
   }
 }
