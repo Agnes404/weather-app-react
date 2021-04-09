@@ -1,16 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FormattedDate from "./FormattedDate";
 import Forecast from "./Forecast";
 import ForecastDaily from "./ForecastDaily";
+import CurrentWeather from "./CurrentWeather";
 import axios from "axios";
+import ReactLoading from "react-loading";
 
 import "./SearchEngine.css";
-import CurrentWeather from "./CurrentWeather";
 
 export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   const [searchInput, setSearchInput] = useState("");
+  const [count, setCount] = useState();
 
   function handleResponse(response) {
     setWeatherData({
@@ -61,7 +63,27 @@ export default function SearchEngine(props) {
   function navigation(event) {
     event.preventDefault();
     navigator.geolocation.getCurrentPosition(handleLocation);
+    return Spinner();
   }
+
+  function Spinner() {
+    setCount(
+      <ReactLoading
+        type={"spinningBubbles"}
+        color={"black"}
+        height={"30px"}
+        width={"30px"}
+      />
+    );
+  }
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setCount();
+    }, 4000);
+
+    return () => clearTimeout(timeout);
+  }, [count]);
 
   if (weatherData.ready) {
     return (
@@ -86,6 +108,7 @@ export default function SearchEngine(props) {
             >
               <i className="locationIcon fas fa-map-marker-alt"></i>
             </button>
+            <span className="iconLoad">{count}</span>
           </form>
         </div>
         <FormattedDate date={weatherData.date} />
@@ -97,6 +120,6 @@ export default function SearchEngine(props) {
     );
   } else {
     search();
-    return <h1> `Loading...` </h1>;
+    return <h1> Loading... </h1>;
   }
 }
