@@ -9,3 +9,10 @@ footer {
   width: 100%;
   text-align: center;
 }
+
+.gitHubLink:hover,
+.linkedInLink:hover {
+  font-weight: 550;
+  text-decoration: none;
+  transition: all 10ms ease-in-out;
+}
