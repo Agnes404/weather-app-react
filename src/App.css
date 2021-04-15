@@ -18,7 +18,7 @@
 @media only screen and (max-width: 450px) {
   h1 {
     font-size: 45px !important;
-    padding: 2px 0 !important;
+    padding: 3px 0 !important;
   }
   h2,
   .time {
@@ -60,7 +60,7 @@
 @media only screen and (max-width: 340px) {
   h1 {
     font-size: 40px !important;
-    padding: 2px 0 !important;
+    padding: 3px 0 !important;
   }
   h2,
   .time {
@@ -69,7 +69,8 @@
     line-height: 1.5;
   }
 
-  .col-4 {
+  .col-4,
+  .col {
     padding: 3px !important;
   }
 
@@ -90,13 +91,17 @@
   p,
   li {
     font-size: 12px !important;
+    margin-bottom: 0 !important;
   }
 
   .currentWeatherInfo {
     margin: 0px !important;
   }
 
-  .WeatherIcon,
+  .col-4 img {
+    width: 55px !important;
+  }
+
   .mainIcon {
     width: 38px !important;
     display: inline;
@@ -104,7 +109,7 @@
 
   .col {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 15px;
     flex-basis: auto;
