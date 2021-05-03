@@ -4,7 +4,7 @@ This is my first project using React.js. This weather application is using real-
 
 ## Overview
 
-It is hosted on Netlify 👉 https://dazzling-rosalind-867b9a.netlify.app/.  
+It is hosted on Netlify 👉https://suspicious-nightingale-c8f094.netlify.app/.  
 <br />
 <div align="center">
         <img width="75%" src="https://github.com/Agnes404/weather-app-react/blob/master/src/WeatherScreenshot.png" alt="About screen" title="Screenshot of WeatherApp"</img>
